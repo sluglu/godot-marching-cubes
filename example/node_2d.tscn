@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://cavsxdd8nior7"]
+
+[ext_resource type="Script" path="res://example/scripts/new_gd_script.gd" id="1_nqiyy"]
+[ext_resource type="Texture2D" uid="uid://dh6ya6ugagste" path="res://icon.png" id="2_2axkt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_myqvj"]
+atlas = ExtResource("2_2axkt")
+region = Rect2(0.02, 0, 0, 0)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oa68e"]
+atlas = ExtResource("2_2axkt")
+region = Rect2(0.014, 0, 0, 0)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xalmb"]
+
+[node name="Node2D" type="Node2D"]
+metadata/_edit_lock_ = true
+metadata/_edit_vertical_guides_ = [-84.0]
+
+[node name="Node2D" type="Node2D" parent="." node_paths=PackedStringArray("selected_child")]
+position = Vector2(9, 20)
+script = ExtResource("1_nqiyy")
+selected_child = NodePath("Node313531")
+var4 = [{
+"a": 392.0,
+"b": "eett",
+"c": 351.509,
+"d": Vector2(0.101, 0)
+}, {
+"a": 38.0
+}, {
+"c": 0.005
+}, {
+"a": 86.0,
+"c": 0.006
+}, {}]
+var6 = [SubResource("AtlasTexture_myqvj"), SubResource("AtlasTexture_oa68e"), SubResource("AtlasTexture_xalmb")]
+var3 = []
+
+[node name="Node" type="Node" parent="Node2D"]
+
+[node name="Node2" type="Node" parent="Node2D"]
+
+[node name="Node313531" type="Node" parent="Node2D"]
+
+[node name="Node4" type="Node" parent="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
